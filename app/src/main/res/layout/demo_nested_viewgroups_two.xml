@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flat_food" />
+
+        <TextView
+            android:id="@+id/textview_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageview"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:text="Combo * 1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textview_two"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/imageview"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Ramen House"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_three"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textview_two"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="This crazy place is A-M-A-Z-I-N-G the food is"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
